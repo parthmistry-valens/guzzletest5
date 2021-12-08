@@ -1,0 +1,31 @@
+version: 1
+job:
+  type: ingestion
+  description: Special desc
+source:
+  endpoint: lo_lfs
+  properties:
+    format: delimited
+    format_properties:
+      column_delimiter: ','
+      contains_header: true
+      quote_delimiter: '"'
+      escape_char: \\
+      infer_schema: false
+    source_file_pattern: csv/users*.csv
+    charset: UTF-8
+    partial_load: false
+schema:
+  strict_schema_check: true
+  schema_derivation_strategy: source
+  columns: []
+  discard: true
+target:
+  endpoint: lo_lfs
+  properties:
+    format: json
+    charset: UTF-8
+    path: json_tgt
+    format_properties:
+      merge_file: true
+    preserve_hierarchy: false
