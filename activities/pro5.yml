@@ -5,15 +5,13 @@ source:
   endpoint: "delta"
   properties:
     table: "test"
-  incremental: false
+  incremental: true
   additional_columns:
   - name: "test"
     framework_column: "w_created_ts"
-    framework_generated: true
   - name: "test2"
     value: "abc"
     framework_column: "w_refresh_ts"
-    framework_generated: true
 target:
   endpoint: "delta"
   operation: "append"

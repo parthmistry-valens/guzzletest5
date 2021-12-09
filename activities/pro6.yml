@@ -5,7 +5,7 @@ source:
   endpoint: "delta"
   properties:
     table: "test"
-  incremental: false
+  incremental: true
   additional_columns:
   - name: "test"
     framework_column: "w_created_ts"

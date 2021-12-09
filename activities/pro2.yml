@@ -5,7 +5,6 @@ source:
   endpoint: "delta"
   properties:
     table: "test"
-  incremental: false
 target:
   endpoint: "delta"
   operation: "append"

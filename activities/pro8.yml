@@ -13,7 +13,7 @@ source:
   - name: "test2"
     value: "abc"
     framework_column: "w_refresh_ts"
-    framework_generated: false
+    framework_generated: test
 target:
   endpoint: "delta"
   operation: "append"

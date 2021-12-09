@@ -2,12 +2,11 @@ version: 1
 job:
   type: "processing"
 source:
-  endpoint: "delta"
+  endpoint: "delta2"
   properties:
     table: "test"
-  incremental: false
 target:
-  endpoint: "delta"
+  endpoint: "delta2"
   operation: "append"
   soft_delete: false
   properties:

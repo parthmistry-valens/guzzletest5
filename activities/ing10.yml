@@ -7,7 +7,7 @@ source:
   properties:
     source_file_pattern: "csv/users*.csv"
     format: "delimited"
-    charset: "UTF-8"
+    charset2: "UTF-8"
     partial_load: false
     format_properties:
       column_delimiter: ","

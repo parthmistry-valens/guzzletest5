@@ -1,5 +1,5 @@
-version: 1
-job:
+version; 1
+job=
   type: "ingestion"
   description: "Special desc"
 source:

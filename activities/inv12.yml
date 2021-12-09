@@ -1,6 +1,6 @@
 version: 1
 job:
-  type: "ingestion"
+  type2: "ingestion"
   description: "Special desc"
 source:
   endpoint: "lo_lfs"
