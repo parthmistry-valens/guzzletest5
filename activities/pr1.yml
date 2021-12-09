@@ -6,6 +6,10 @@ source:
   properties:
     table: "test"
   incremental: false
+  additional_columns:
+  - name: "test"
+    framework_column: "w_created_ts"
+    framework_generated: true
 target:
   endpoint: "delta"
   operation: "append"
