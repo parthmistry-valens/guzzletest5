@@ -1,0 +1,14 @@
+version: 1
+job:
+  type: "processing"
+source:
+  endpoint: "delta"
+  properties:
+    table: "test"
+  incremental: false
+target:
+  endpoint: "delta"
+  operation: "append"
+  soft_delete: false
+  properties:
+    table: "test2"
