@@ -5,14 +5,10 @@ source:
   endpoint: "delta"
   properties:
     table: "test"
+  incremental: false
 target:
   endpoint: "delta"
   operation: "append"
-  incremental: false
   soft_delete: false
   properties:
     table: "test2"
-  additional_columns:
-  - name: "test"
-    framework_column: "w_created_ts"
-    framework_generated: true
